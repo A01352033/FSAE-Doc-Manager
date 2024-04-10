@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    margin-left: 0vh;
+  }
+
+.bg {
+    background-color: rgb(84, 84, 84);
+}
