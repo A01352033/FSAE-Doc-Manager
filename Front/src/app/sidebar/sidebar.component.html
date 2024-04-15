@@ -1,6 +1,26 @@
 <div class="sidebar d-flex flex-column flex-shrink-0 p-3">
+  <div class="row">
+    Vehicle
+  </div>
+    <ul class="nav-list">
+      <li class="nav-list-item" *ngFor="let item of list">
+        <i class="{{item.icon}}"></i>
+        <span>
+          <a href="#">{{item.name}}</a>
+        </span>
+      </li>
+    </ul>
+
     <div class="row">
-      esto le toca a josue
+    Administration
     </div>
+    <ul class="nav-list">
+    <li class="nav-list-item" *ngFor="let item of list2">
+      <i class="{{item.icon}}"></i>
+      <span>
+        <a href="#">{{item.name}}</a>
+      </span>
+    </li>
+  </ul>
   </div>
   
