@@ -1,0 +1,21 @@
+.sidebar {
+  width: 37vh;
+  height: 95vh; /* Altura del 100% del viewport */
+  background-color: #343a40; /* O cualquier otro color oscuro que prefieras */
+  color: white;
+  /* round edges */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  /* Separate from top and bottom */
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  margin-left: 0.5vh;
+  /* Add a border line */
+  border: 3px solid #615f5f;
+}
+
+:host {
+  flex: 0 0 200px; /* Ejemplo de ancho fijo para el sidebar */
+}
