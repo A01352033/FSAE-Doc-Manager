@@ -23,23 +23,17 @@
   margin-right: 10px;
   margin-top: 10px;
   padding: 15px;
-  max-height: 100vh; /* Altura máxima basada en la altura de la ventana */
-  overflow-y: auto; /* Muestra scrollbar solo si es necesario */
-  /* Otros estilos... */
- 
+  overflow-y: auto; /* Esto creará un scrollbar si el contenido es más alto que el contenedor */
+  border: 3px solid white; /* Ajusta según sea necesario */
+  margin: 10px; /* Ajusta según sea necesario */
+  padding: 10px; /* Ajusta según sea necesario */
 }
-.border-white{
-  border: 5px solid gray;
-  height: 500px;
-  width: 200px;
 
-}
 .nav-list{
   list-style:none;
   height: 50;
   padding: 0px;
   margin-bottom: 0%;
-  width: 100%;
 }
 .nav-list a {
   text-decoration: none; /* Elimina el subrayado */
