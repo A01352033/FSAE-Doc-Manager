@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent implements OnInit{
+  imageSrc: string = './assets/FSAE.png';
+
   list = [
     {
       number: '1',
@@ -51,6 +54,7 @@ export class SidebarComponent implements OnInit{
     },
 
   ];
+  
 constructor() {}
 
 ngOnInit(): void {}
