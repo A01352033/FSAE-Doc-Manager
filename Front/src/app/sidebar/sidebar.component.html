@@ -1,10 +1,12 @@
 <div class="sidebar d-flex flex-column flex-shrink-0 p-3"> 
 <img width="250" [src]="imageSrc" alt="FSAE">
  <div class="side-nav-content border-white">
-  <div class="row">
-      Vehicle
-  </div>
-    <ul class="nav-list ">
+  <div class="row" (click)="isVehicleExpanded = !isVehicleExpanded">
+      <h5>Vehicle
+        <i class="fas" [class.fa-chevron-down]="!isVehicleExpanded" [class.fa-chevron-up]="isVehicleExpanded"></i>
+      </h5>
+    </div>
+    <ul class="nav-list " *ngIf="isVehicleExpanded">
       <li class="nav-list-item " *ngFor="let item of list">
         <i class="{{item.icon}}"></i>
         <span>
@@ -12,11 +14,11 @@
         </span>
       </li>
     </ul>
-
-    <div class="row">
-      Administration
+  
+    <div class="row" (click)="isAdministrationExpanded = !isAdministrationExpanded">
+      <h5>Administration</h5>
     </div>
-    <ul class="nav-list">
+    <ul class="nav-list" *ngIf="isAdministrationExpanded">
     <li class="nav-list-item" *ngFor="let item of list2">
       <i class="{{item.icon}}"></i>
       <span>
@@ -24,6 +26,18 @@
       </span>
     </li>
   </ul>
-   </div>
+
+  <div class="row" (click)="isSettingsExpanded = !isSettingsExpanded">
+    <h5>Settings</h5>
+  </div>
+  <ul class="nav-list" *ngIf="isSettingsExpanded">
+  <li class="nav-list-item" *ngFor="let item of list3">
+    <i class="{{item.icon}}"></i>
+    <span>
+      <a href="#">{{item.name}}</a>
+    </span>
+  </li>
+</ul>
+</div>
 </div>
   

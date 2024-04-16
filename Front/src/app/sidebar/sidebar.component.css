@@ -1,7 +1,7 @@
 .sidebar {
   width: 37vh;
   height: 95vh; /* Altura del 100% del viewport */
-  background-color: #c2c2c2; /* O cualquier otro color oscuro que prefieras */
+  background-color: #ffffff; /* O cualquier otro color oscuro que prefieras */
   color: white;
   /* round edges */
   border-top-right-radius: 20px;
@@ -43,11 +43,11 @@
 }
 
 .nav-list-item{
-  padding: 10px 20px; /* Añade más padding para un mejor espaciado */
+  padding: 4px 9px; /* Añade más padding para un mejor espaciado */
   margin: 5px 0; /* Añade un pequeño margen entre los ítems */
   background-color: #ffffff; /* Fondo blanco para los ítems */
   border-radius: 20px; /* Bordes redondeados */
-  box-shadow: 0px 3px 6px #00000029; /* Sombra suave para darle profundidad */
+ /* box-shadow: 0px 3px 6px #00000029; /* Sombra suave para darle profundidad */
 
 }
 
@@ -64,4 +64,12 @@
   margin-top: 20px; /* Espacio antes de cada nueva sección */
   border-left: 3px solid #333;
   
+}
+.row h5 {
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Asegura que el texto y el ícono estén alineados verticalmente */
+}
+.row h5 i {
+  margin-left: 10px; /* Espacio entre el texto y el ícono */
 }
