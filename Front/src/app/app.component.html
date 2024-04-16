@@ -1,13 +1,16 @@
 <div class="container">
-  <div class="col">
-    <app-sidebar></app-sidebar>
-  </div>
-  <div class="col">
-    <div class="row-sm">
-      <app-header></app-header>
+  <button (click)="fetchData()">Load Data</button>
+  <ul *ngIf="dataList.length; else loadingBlock">
+    <li *ngFor="let data of dataList">
+      {{ item | json }}
+    </li>
+  </ul>
+  <ng-template #loadingBlock>
+    <div *ngIf="loading; else noDataBlock">
+      Loading...
     </div>
-    <div class="row">
-      <app-card></app-card>
-    </div>
-  </div>
+  </ng-template>
+  <ng-template #noDataBlock>
+      No data available
+  </ng-template>
 </div>
