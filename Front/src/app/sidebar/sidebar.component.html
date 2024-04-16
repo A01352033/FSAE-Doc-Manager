@@ -1,38 +1,45 @@
 <div class="sidebar d-flex flex-column flex-shrink-0 p-3"> 
 <img width="250" [src]="imageSrc" alt="FSAE">
  <div class="side-nav-content border-white">
-  <div class="row" (click)="isVehicleExpanded = !isVehicleExpanded">
-      <h5>Vehicle
+  <div class="row w-100" (click)="isVehicleExpanded = !isVehicleExpanded">
+      <h5 class="w-100">
+        Vehicle
         <i class="fas" [class.fa-chevron-down]="!isVehicleExpanded" [class.fa-chevron-up]="isVehicleExpanded"></i>
       </h5>
     </div>
-    <ul class="nav-list " *ngIf="isVehicleExpanded">
+    <ul class="nav-list w-100" *ngIf="isVehicleExpanded">
       <li class="nav-list-item " *ngFor="let item of list">
-        <i class="{{item.icon}}"></i>
+        
         <span>
           <a href="#">{{item.name}}</a>
         </span>
       </li>
     </ul>
   
-    <div class="row" (click)="isAdministrationExpanded = !isAdministrationExpanded">
-      <h5>Administration</h5>
+    <div class="row w-100" (click)="isAdministrationExpanded = !isAdministrationExpanded">
+      <h5 class="w-100">
+        Administration
+        <i class="fas" [class.fa-chevron-down]="!isAdministrationExpanded" [class.fa-chevron-up]="isAdministrationExpanded"></i>
+      </h5>
     </div>
-    <ul class="nav-list" *ngIf="isAdministrationExpanded">
+    <ul class="nav-list w-100" *ngIf="isAdministrationExpanded">
     <li class="nav-list-item" *ngFor="let item of list2">
-      <i class="{{item.icon}}"></i>
+      
       <span>
         <a href="#">{{item.name}}</a>
       </span>
     </li>
   </ul>
 
-  <div class="row" (click)="isSettingsExpanded = !isSettingsExpanded">
-    <h5>Settings</h5>
+  <div class="row w-100" (click)="isSettingsExpanded = !isSettingsExpanded">
+    <h5 class="w-100">
+      Settings
+      <i class="fas" [class.fa-chevron-down]="!isSettingsExpanded" [class.fa-chevron-up]="isSettingsExpanded"></i>
+    </h5>
   </div>
-  <ul class="nav-list" *ngIf="isSettingsExpanded">
+  <ul class="nav-list w-100" *ngIf="isSettingsExpanded">
   <li class="nav-list-item" *ngFor="let item of list3">
-    <i class="{{item.icon}}"></i>
+    
     <span>
       <a href="#">{{item.name}}</a>
     </span>
