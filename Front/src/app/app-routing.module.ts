@@ -5,10 +5,18 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginModule } from './login/login.module';
 import { LoginComponent } from './login/login/login.component';
+import { HomeDocComponent } from './home-doc/home-doc.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 
 const routes: Routes = [
   {
     path: '',
+    redirectTo: '/landing',
+    pathMatch: 'full'
+  },
+  {
+    path: 'landing',
     component: LandingComponent
   },
   {
@@ -24,6 +32,14 @@ const routes: Routes = [
     component: LoginComponent,    
     loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
 
+  },
+  {
+    path: 'home-doc',
+    component: HomeDocComponent
+  },
+  {
+    path: '**', 
+    component: PageNotFoundComponent
   }
 ];
 
