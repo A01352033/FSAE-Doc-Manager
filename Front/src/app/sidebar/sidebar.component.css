@@ -23,6 +23,10 @@
   margin-right: 10px;
   margin-top: 10px;
   padding: 15px;
+  max-height: 100vh; /* Altura máxima basada en la altura de la ventana */
+  overflow-y: auto; /* Muestra scrollbar solo si es necesario */
+  /* Otros estilos... */
+ 
 }
 .border-white{
   border: 5px solid gray;
@@ -35,6 +39,7 @@
   height: 50;
   padding: 0px;
   margin-bottom: 0%;
+  width: 100%;
 }
 .nav-list a {
   text-decoration: none; /* Elimina el subrayado */
