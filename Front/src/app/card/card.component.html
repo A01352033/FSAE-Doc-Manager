@@ -3,9 +3,15 @@
     <div class="col">
       <h2>Recent Documents</h2>
       <ul class="list-group">
-        <li class="list-group-item" *ngFor="let document of data">
+        <li class="list-group-item" *ngFor="let document of documents">
           <h5>{{ document.nombre }}</h5>
           <small>Created on: {{ document.fechacreada | date:'mediumDate' }}</small>
+        </li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let folder of folders">
+          <h5>{{ folder.nombre }}</h5>
+          <small>Created on: {{ folder.fechacreada | date:'mediumDate' }}</small>
         </li>
       </ul>
     </div>
