@@ -8,13 +8,23 @@ import { HeaderComponent } from './header/header.component';
 import { CardComponent } from './card/card.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import { LandingComponent } from './landing/landing.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { HomeDocComponent } from './home-doc/home-doc.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     HeaderComponent,
-    CardComponent
+    CardComponent,
+    LandingComponent,
+    AboutComponent,
+    ContactComponent,
+    HomeDocComponent,
+    PageNotFoundComponent
   ],
   imports: [
     HttpClientModule,
