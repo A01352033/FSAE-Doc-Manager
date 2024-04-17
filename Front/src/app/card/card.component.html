@@ -1,4 +1,13 @@
-<div class="Contenedor d-flex flex-row flex-shrink-0 p-3">
-    <div class="col"></div>
-</div>
+<div class="container d-flex flex-row flex-shrink-0 p-3">
+    <!-- List of documents -->
+    <div class="col">
+      <h2>Recent Documents</h2>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let document of data">
+          <h5>{{ document.nombre }}</h5>
+          <small>Created on: {{ document.fechacreada | date:'mediumDate' }}</small>
+        </li>
+      </ul>
+    </div>
+  </div>
   
