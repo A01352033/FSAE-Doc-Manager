@@ -11,17 +11,17 @@ cards: any = [
     {
       title: 'Card 1',
       description: 'This is card 1',
-      image: 'https://via.placeholder.com/150'
+      image: '../assets/folder_icon.png'
     },
     {
       title: 'Card 2',
       description: 'This is card 2',
-      image: 'https://via.placeholder.com/150'
+      image: '../assets/folder_icon.png'
     },
     {
       title: 'Card 3',
       description: 'This is card 3',
-      image: 'https://via.placeholder.com/150'
+      image: '../assets/folder_icon.png'
     }
   ];
 
