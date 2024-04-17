@@ -1,8 +1,8 @@
 .sidebar {
   width: 37vh;
   height: 95vh; /* Altura del 100% del viewport */
-  background-color: #343a40; /* O cualquier otro color oscuro que prefieras */
-  color: white;
+  background-color: #ffffff; /* O cualquier otro color oscuro que prefieras */
+  color: rgb(255, 255, 255);
   /* round edges */
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -14,8 +14,108 @@
   margin-left: 0.5vh;
   /* Add a border line */
   border: 3px solid #615f5f;
+  padding: 20px;
+}
+.sidebar .row h5 {
+  /*cursor: pointer; */
+  display: flex;
+  align-items: center; /* Alinea íconos y texto verticalmente */
+  justify-content: space-between; /* Distribuye el espacio entre texto e ícono */
+  padding: 0.5rem 1rem; /* Ajusta el padding según sea necesario */
+}
+.sidebar .row h5 i {
+  transition: transform 0.1s ease; /* Transición suave para la rotación */
+  margin-right: 0;
+}
+.sidebar .row h5 .fa-chevron-up {
+  /* Puede ser necesario ajustar la rotación dependiendo de cómo desees que se vea el ícono */
+  transform: rotate(180deg);
 }
 
+.sidebar .row h5 .fa-chevron-down {
+  /* Puede ser necesario ajustar la rotación dependiendo de cómo desees que se vea el ícono */
+  transform: rotate(-180deg);
+}
+.sidebar ul.nav-list {
+  list-style-type: none; /* Elimina los estilos de lista por defecto */
+  padding-left: 0; /* Elimina el padding izquierdo */
+  margin: 0; /* Elimina el margen por defecto */
+}
+
+.sidebar ul.nav-list li {
+  padding: 0.25rem 1rem; /* Ajusta el padding según sea necesario */
+}
+
+.side-nav-content {
+  color: black;
+  width: 230px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 15px;
+  overflow-y: auto; /* Esto creará un scrollbar si el contenido es más alto que el contenedor */
+  border: 3px solid white; /* Ajusta según sea necesario */
+  margin: 10px; /* Ajusta según sea necesario */
+  padding: 10px; /* Ajusta según sea necesario */
+}
+
+.nav-list{
+  list-style:none;
+  height: 50;
+  padding: 0px;
+  margin-bottom: 0%;
+}
+.nav-list a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Hereda el color del elemento padre, por ejemplo, negro */
+  display: block; /* Hace que el enlace llene el espacio de su contenedor li */
+  padding: 10px 20px; /* Añade un poco de espacio alrededor del texto para hacer más fácil el clic */
+}
+
+.nav-list-item{
+  padding: 4px 9px; /* Añade más padding para un mejor espaciado */
+  margin: 5px 0; /* Añade un pequeño margen entre los ítems */
+  background-color: #ffffff; /* Fondo blanco para los ítems */
+  border-radius: 20px; /* Bordes redondeados */
+ /* box-shadow: 0px 3px 6px #00000029; /* Sombra suave para darle profundidad */
+
+}
+
+.nav-list-item:hover{
+  background-color: #e0e0e0;
+}
 :host {
   flex: 0 0 200px; /* Ejemplo de ancho fijo para el sidebar */
+}
+.row{
+  font-weight: bold; /* Texto en negrita */
+  color: #333; /* Color de texto oscuro para mayor contraste */
+  padding-left: 20px; /* Alinea el texto con los ítems de la lista */
+  margin-top: 20px; /* Espacio antes de cada nueva sección */
+  border-left: 3px solid #333;
+  
+}
+.row h5 {
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Asegura que el texto y el ícono estén alineados verticalmente */
+  justify-content: space-between; /* Separa los elementos al inicio y al final del contenedor */
+  width: 100%; /* Asegura que el h5 ocupa todo el ancho de su contenedor */
+}
+.row h5 i {
+  margin-left: auto; /* Espacio entre el texto y el ícono */
+  transition: transform 0.3s ease;
+}
+.fa-chevron-down {
+  transform: rotate(0deg);
+}
+
+.fa-chevron-up {
+  transform: rotate(180deg);
+}
+
+h5 i{
+  
+  color: red;
+  font-size: 2em;
 }
