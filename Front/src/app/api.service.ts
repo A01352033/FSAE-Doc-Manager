@@ -14,7 +14,7 @@ export class ApiService {
 
   getRecentDocuments(): Observable<Document[]> {
     const headers = new HttpHeaders({
-      'Authorization': 'Bearer WG6NpFOHqZgbia3F3t7c8A'
+      'Authorization': 'Bearer 1f-JkGIPFPDjK_DFF-iHuA'
     });
 
     return this.http.get<any[]>('https://gb9eb75e0859bf4-techtitansdb.adb.mx-monterrey-1.oraclecloudapps.com/ords/admin/documento/',{headers}
