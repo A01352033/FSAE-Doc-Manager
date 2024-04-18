@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-
+  imageSrc: string = './assets/CarroFSAE.png';
+  logoimageSrc: string = './assets/FSAE.png';
 }

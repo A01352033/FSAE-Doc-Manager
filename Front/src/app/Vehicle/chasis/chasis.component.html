@@ -1,0 +1,16 @@
+<div class="chasis-folders">
+  <div *ngFor="let folder of folders" class="folder-item">
+    <!-- Utiliza routerLink para navegar a la ruta de documentos para el folder específico -->
+    <a [routerLink]="['/chasis/documents', folder.id]" class="folder-link">
+      <div class="folder-icon">
+        <i class="material-icons">folder</i>
+      </div>
+      <div class="folder-details">
+        <div class="folder-name">{{ folder.name }}</div>
+        <div class="folder-updated">Actualizado: {{ folder.updated }}</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+ 

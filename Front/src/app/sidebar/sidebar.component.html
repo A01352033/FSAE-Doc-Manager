@@ -11,7 +11,7 @@
       <li class="nav-list-item " *ngFor="let item of list">
         
         <span>
-          <a href="#">{{item.name}}</a>
+          <a [routerLink]="item.route">{{item.name}}</a>
         </span>
       </li>
     </ul>
@@ -26,7 +26,7 @@
     <li class="nav-list-item" *ngFor="let item of list2">
       
       <span>
-        <a href="#">{{item.name}}</a>
+        <a [routerLink]="item.route">{{item.name}}</a>
       </span>
     </li>
   </ul>

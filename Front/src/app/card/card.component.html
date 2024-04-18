@@ -10,8 +10,35 @@
                         <!-- <h5 class="card-title">{{card.title}}</h5> -->
                         <p class="card-text">{{card.description}}</p>
                     </div>
+                    
                 </a>
+                <button (click)="popup.openPopup()">Open Popup</button>
             </div>
         </div>
     </div>
 </div>
+<app-popup-fileversions #popup></app-popup-fileversions>
+
+<!--
+  
+
+<div class="container d-flex flex-row flex-shrink-0 p-3">
+
+    <div class="col">
+      <h2>Recent Documents</h2>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let document of documents">
+          <h5>{{ document.nombre }}</h5>
+          <small>Created on: {{ document.fechacreada | date:'mediumDate' }}</small>
+        </li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let folder of folders">
+          <h5>{{ folder.nombre }}</h5>
+          <small>Created on: {{ folder.fechacreada | date:'mediumDate' }}</small>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+-->
