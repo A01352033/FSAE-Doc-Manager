@@ -8,6 +8,13 @@ import { PowertrainComponent } from './Vehicle/powertrain/powertrain.component';
 import { SuspensionComponent } from './Vehicle/suspension/suspension.component';
 import { SectionLayoutComponent } from './layouts/section-layout/section-layout.component';
 import { DocumentsComponent } from './documents/documents.component';
+import { LandingComponent } from './landing/landing.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { LoginModule } from './login/login.module';
+import { LoginComponent } from './login/login/login.component';
+import { HomeDocComponent } from './home-doc/home-doc.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { 
@@ -58,21 +65,6 @@ const routes: Routes = [
       { path: 'documents/:id', component: DocumentsComponent }
     ]
   },
-import { LandingComponent } from './landing/landing.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { LoginModule } from './login/login.module';
-import { LoginComponent } from './login/login/login.component';
-import { HomeDocComponent } from './home-doc/home-doc.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
-
-const routes: Routes = [
-  {
-    path: '',
-    redirectTo: '/landing',
-    pathMatch: 'full'
-  },
   {
     path: 'landing',
     component: LandingComponent
@@ -100,6 +92,7 @@ const routes: Routes = [
     component: PageNotFoundComponent
   }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
