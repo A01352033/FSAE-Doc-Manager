@@ -14,7 +14,7 @@ import { FinanceComponent } from './Administration/finance/finance.component';
 import { SectionLayoutComponent } from './layouts/section-layout/section-layout.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
@@ -35,8 +35,8 @@ import { PopupFileversionsComponent } from './popup-fileversions/popup-fileversi
     FinanceComponent,
     SectionLayoutComponent,
     DocumentsComponent,
-    HeaderComponent,
     CardComponent,
+    HeaderComponent,
     LandingComponent,
     AboutComponent,
     ContactComponent,

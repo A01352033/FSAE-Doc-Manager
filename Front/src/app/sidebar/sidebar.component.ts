@@ -51,16 +51,12 @@ export class SidebarComponent implements OnInit{
       name: 'Finance',
       icon: 'fa-solid fa-house',
       route: '/finance'
-    }
-
     },
     {
       number: '7',
       name: 'Permissions',
       icon: 'fa-solid fa-house',
     },
-    
-
   ];
 
   list3 = [
