@@ -1,8 +1,8 @@
 .Contenedor {
   width: auto;
   height: 64.95vh; /* Altura del 100% del viewport */
-  background-color: #343a40; /* O cualquier otro color oscuro que prefieras */
-  color: white;
+  background-color: white; /* O cualquier otro color oscuro que prefieras */
+  color: black;
   /* round edges */
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -18,4 +18,34 @@
 
 :host {
     flex: 2; /* El header ocupará el espacio restante */
+}
+
+.card {
+  width: 12%;
+  height: 12%;
+  background-color: white;
+  color: black;
+  /* round edges */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  /* Separate from top and bottom */
+  margin-top: 0vh;
+  margin-bottom: 2.5vh;
+  margin-left: 0.5vh;
+  /* Add a border line */
+  border: 3px solid white;
+  text-align: center;
+  /* change color on hover */
+  transition: 0.3s;
+  font-size: small;
+}
+
+.card:hover {
+  background-color: #f1f1f1;
+}
+
+.pad {
+  padding: 1.5vh;
 }
