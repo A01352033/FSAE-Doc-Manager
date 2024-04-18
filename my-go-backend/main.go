@@ -41,6 +41,7 @@ func main() {
     r.HandleFunc("/upload", handlers.UploadHandler(storageService))
     r.HandleFunc("/downloadblobversion/{blobName}/{versionID}", handlers.DownloadVersionHandler(storageService)).Methods("GET")
 
+    r.HandleFunc("/getbearer", handlers.GetBearer()).Methods("GET")
 
     //http.HandleFunc("/list-versions", handlers.ListBlobVersionsHandler(storageService))
     fmt.Println("Server listening on port 3000")
