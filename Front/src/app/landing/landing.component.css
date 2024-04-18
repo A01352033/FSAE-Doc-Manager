@@ -1,0 +1,21 @@
+.lista {
+    list-style: none;
+    height: 50;
+    padding: 0px;
+    margin-bottom: 0%;
+}
+
+.coolnav {
+    background-color: #f8f9fa;
+    padding: 0px;
+    margin-bottom: 0%;
+    width: 100%;
+}
+
+/* center a div */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}

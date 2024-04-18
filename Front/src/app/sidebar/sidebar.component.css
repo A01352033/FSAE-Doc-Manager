@@ -11,9 +11,8 @@
   /* Separate from top and bottom */
   margin-top: 2.5vh;
   margin-bottom: 2.5vh;
-  margin-left: 0.5vh;
   /* Add a border line */
-  border: 3px solid #615f5f;
+  border: 1px solid #615f5f;
   padding: 20px;
 }
 .sidebar .row h5 {
@@ -90,9 +89,9 @@
 .row{
   font-weight: bold; /* Texto en negrita */
   color: #333; /* Color de texto oscuro para mayor contraste */
-  padding-left: 20px; /* Alinea el texto con los ítems de la lista */
-  margin-top: 20px; /* Espacio antes de cada nueva sección */
-  border-left: 3px solid #333;
+  padding-left: 0px; /* Alinea el texto con los ítems de la lista */
+  margin-top: 10px; /* Espacio antes de cada nueva sección */
+  border-left: 4px solid #333;
   
 }
 .row h5 {
@@ -117,5 +116,5 @@
 h5 i{
   
   color: red;
-  font-size: 2em;
+  font-size: 1em;
 }

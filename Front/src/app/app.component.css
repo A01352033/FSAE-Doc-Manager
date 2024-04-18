@@ -2,12 +2,6 @@
   display: flex;
 }
 
-.app-sidebar {
-  /* Estilos para tu sidebar, por ejemplo: */
-  width: 250px; /* o el ancho que desees */
-  /* más estilos... */
-}
-
 .content {
   flex-grow: 1; /* Asegura que tome el espacio restante */
   /* más estilos... */
