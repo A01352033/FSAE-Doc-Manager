@@ -13,6 +13,14 @@ import { MarketingComponent } from './Administration/marketing/marketing.compone
 import { FinanceComponent } from './Administration/finance/finance.component';
 import { SectionLayoutComponent } from './layouts/section-layout/section-layout.component';
 import { DocumentsComponent } from './documents/documents.component';
+import { HttpClientModule } from '@angular/common/http';
+
+import { LandingComponent } from './landing/landing.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { HomeDocComponent } from './home-doc/home-doc.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PopupFileversionsComponent } from './popup-fileversions/popup-fileversions.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +35,17 @@ import { DocumentsComponent } from './documents/documents.component';
     FinanceComponent,
     SectionLayoutComponent,
     DocumentsComponent,
+    HeaderComponent,
+    CardComponent,
+    LandingComponent,
+    AboutComponent,
+    ContactComponent,
+    HomeDocComponent,
+    PageNotFoundComponent,
+    PopupFileversionsComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule
   ],

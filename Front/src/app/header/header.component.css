@@ -1,0 +1,51 @@
+.coolheader {
+  height: 26vh;
+  width: 168vh; /* Altura del 100% del viewport */
+  background-color: white; /* O cualquier otro color oscuro que prefieras */
+  color: black;
+  /* round edges */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  /* Separate from top and bottom */
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  margin-left: 0.5vh;
+  /* Add a border line */
+  border: 3px solid #615f5f;
+}
+
+:host {
+  flex: 1; /* El header ocupará el espacio restante */
+}
+
+.card {
+  width: 10%;
+  height: 10%;
+  background-color: white;
+  color: black;
+  /* round edges */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  /* Separate from top and bottom */
+  margin-top: 0vh;
+  margin-bottom: 2.5vh;
+  margin-left: 0.5vh;
+  /* Add a border line */
+  border: 3px solid white;
+  text-align: center;
+  /* change color on hover */
+  transition: 0.3s;
+  font-size:x-small;
+}
+
+.card:hover {
+  background-color: #f1f1f1;
+}
+
+.pad {
+  padding: 1.5vh;
+}

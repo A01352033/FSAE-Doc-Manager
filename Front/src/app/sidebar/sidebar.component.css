@@ -1,8 +1,8 @@
 .sidebar {
   width: 37vh;
   height: 95vh; /* Altura del 100% del viewport */
-  background-color: #c2c2c2; /* O cualquier otro color oscuro que prefieras */
-  color: white;
+  background-color: #ffffff; /* O cualquier otro color oscuro que prefieras */
+  color: rgb(255, 255, 255);
   /* round edges */
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -16,6 +16,36 @@
   border: 3px solid #615f5f;
   padding: 20px;
 }
+.sidebar .row h5 {
+  /*cursor: pointer; */
+  display: flex;
+  align-items: center; /* Alinea íconos y texto verticalmente */
+  justify-content: space-between; /* Distribuye el espacio entre texto e ícono */
+  padding: 0.5rem 1rem; /* Ajusta el padding según sea necesario */
+}
+.sidebar .row h5 i {
+  transition: transform 0.1s ease; /* Transición suave para la rotación */
+  margin-right: 0;
+}
+.sidebar .row h5 .fa-chevron-up {
+  /* Puede ser necesario ajustar la rotación dependiendo de cómo desees que se vea el ícono */
+  transform: rotate(180deg);
+}
+
+.sidebar .row h5 .fa-chevron-down {
+  /* Puede ser necesario ajustar la rotación dependiendo de cómo desees que se vea el ícono */
+  transform: rotate(-180deg);
+}
+.sidebar ul.nav-list {
+  list-style-type: none; /* Elimina los estilos de lista por defecto */
+  padding-left: 0; /* Elimina el padding izquierdo */
+  margin: 0; /* Elimina el margen por defecto */
+}
+
+.sidebar ul.nav-list li {
+  padding: 0.25rem 1rem; /* Ajusta el padding según sea necesario */
+}
+
 .side-nav-content {
   color: black;
   width: 230px;
@@ -23,23 +53,17 @@
   margin-right: 10px;
   margin-top: 10px;
   padding: 15px;
-  max-height: 100vh; /* Altura máxima basada en la altura de la ventana */
-  overflow-y: auto; /* Muestra scrollbar solo si es necesario */
-  /* Otros estilos... */
- 
+  overflow-y: auto; /* Esto creará un scrollbar si el contenido es más alto que el contenedor */
+  border: 3px solid white; /* Ajusta según sea necesario */
+  margin: 10px; /* Ajusta según sea necesario */
+  padding: 10px; /* Ajusta según sea necesario */
 }
-.border-white{
-  border: 5px solid gray;
-  height: 500px;
-  width: 200px;
 
-}
 .nav-list{
   list-style:none;
   height: 50;
   padding: 0px;
   margin-bottom: 0%;
-  width: 100%;
 }
 .nav-list a {
   text-decoration: none; /* Elimina el subrayado */
@@ -49,11 +73,11 @@
 }
 
 .nav-list-item{
-  padding: 10px 20px; /* Añade más padding para un mejor espaciado */
+  padding: 4px 9px; /* Añade más padding para un mejor espaciado */
   margin: 5px 0; /* Añade un pequeño margen entre los ítems */
   background-color: #ffffff; /* Fondo blanco para los ítems */
   border-radius: 20px; /* Bordes redondeados */
-  box-shadow: 0px 3px 6px #00000029; /* Sombra suave para darle profundidad */
+ /* box-shadow: 0px 3px 6px #00000029; /* Sombra suave para darle profundidad */
 
 }
 
@@ -70,4 +94,28 @@
   margin-top: 20px; /* Espacio antes de cada nueva sección */
   border-left: 3px solid #333;
   
+}
+.row h5 {
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Asegura que el texto y el ícono estén alineados verticalmente */
+  justify-content: space-between; /* Separa los elementos al inicio y al final del contenedor */
+  width: 100%; /* Asegura que el h5 ocupa todo el ancho de su contenedor */
+}
+.row h5 i {
+  margin-left: auto; /* Espacio entre el texto y el ícono */
+  transition: transform 0.3s ease;
+}
+.fa-chevron-down {
+  transform: rotate(0deg);
+}
+
+.fa-chevron-up {
+  transform: rotate(180deg);
+}
+
+h5 i{
+  
+  color: red;
+  font-size: 2em;
 }

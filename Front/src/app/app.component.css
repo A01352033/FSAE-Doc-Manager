@@ -12,3 +12,8 @@
   flex-grow: 1; /* Asegura que tome el espacio restante */
   /* más estilos... */
 }
+.bg {
+    background-color: rgb(84, 84, 84);
+}
+
+/* Change background color to grey */

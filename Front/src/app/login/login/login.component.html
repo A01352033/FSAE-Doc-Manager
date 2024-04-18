@@ -1,0 +1,37 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="./login.component.css"> <!-- Asegúrate de que la ruta al CSS es correcta -->
+</head>
+<body>
+
+<!-- La clase login-background va a ser aplicada aquí para el fondo -->
+<div class="login-background">
+  <div class="login-container">
+    <form class="form-login" action="/path-to-server-endpoint" method="post">
+      <h2>
+        <img width="250" [src]="logoimageSrc" alt="FSAE">
+      </h2>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div>
+        <button type="submit">Log In</button>
+      </div>
+      Don't have an account?
+      <div>
+        
+        <a href="/register">Sign In</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
