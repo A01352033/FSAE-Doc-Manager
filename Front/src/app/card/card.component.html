@@ -10,11 +10,14 @@
                         <h5 class="card-title">{{card.title}}</h5>
                         <p class="card-text">{{card.description}}</p>
                     </div>
+                    
                 </a>
+                <button (click)="popup.openPopup()">Open Popup</button>
             </div>
         </div>
     </div>
 </div>
+<app-popup-fileversions #popup></app-popup-fileversions>
 
 <!--
   
