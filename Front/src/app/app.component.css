@@ -1,8 +1,14 @@
-.container {
-    display: flex;
-    margin-left: 0vh;
-  }
+.app-container {
+  display: flex;
+}
 
-.bg {
-    background-color: rgb(84, 84, 84);
+.app-sidebar {
+  /* Estilos para tu sidebar, por ejemplo: */
+  width: 250px; /* o el ancho que desees */
+  /* más estilos... */
+}
+
+.content {
+  flex-grow: 1; /* Asegura que tome el espacio restante */
+  /* más estilos... */
 }

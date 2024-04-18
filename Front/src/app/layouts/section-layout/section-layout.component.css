@@ -1,0 +1,58 @@
+/* section-layout.component.css */
+.section-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .recent-files-section {
+    background-color: #f6f7f8; /* color de fondo de ejemplo */
+    border-bottom: 1px solid #dee2e6; /* borde de ejemplo */
+    padding: 30px;
+  }
+  
+  .recent-files-container {
+    display: flex;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+  }
+  
+  .recent-file-item {
+    display: flex;
+    align-items: center;
+    margin-right: 15px; /* Espaciado entre ítems */
+  }
+  
+  .file-icon {
+    width: 64px; /* o el tamaño que prefieras */
+    height: 64px; /* o el tamaño que prefieras */
+    background-color: #43678e; /* Color de fondo para el ícono */
+    border-radius: 50%; /* Hace el ícono circular */
+    /* Puedes usar una imagen de fondo o un ícono aquí */
+  }
+  
+  .file-details {
+    margin-left: 10px; /* Espaciado entre el ícono y los detalles del archivo */
+  }
+  
+  .file-name {
+    font-weight: bold; /* Nombre del archivo en negrita */
+  }
+  
+  .file-modified {
+    color: #6c757d; /* Color de ejemplo para la fecha de modificación */
+  }
+  
+  /* Estilo para el desplazamiento horizontal en la sección de archivos recientes */
+  .recent-files-section::-webkit-scrollbar {
+    height: 4px;
+  }
+  
+  .recent-files-section::-webkit-scrollbar-thumb {
+    background-color: #adb5bd;
+    border-radius: 2px;
+  }
+  
+  .folder-section {
+    flex-grow: 1; /* Asegura que tome el espacio restante */
+    /* Estilos adicionales para la sección de carpetas */
+  }
+  

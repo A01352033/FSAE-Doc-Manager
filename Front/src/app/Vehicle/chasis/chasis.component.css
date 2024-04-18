@@ -1,0 +1,37 @@
+/* En tu chasis.component.css */
+.chasis-folders {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espacio entre las carpetas */
+    padding: 16px;
+  }
+  
+  .folder-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd; /* Borde ligero para las carpetas */
+    padding: 10px;
+    border-radius: 4px; /* Bordes redondeados para un look suave */
+    width: 200px; /* o el tamaño que prefieras */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar */
+    background-color: #fff; /* Fondo blanco para las carpetas */
+    cursor: pointer; /* Cursor de mano al pasar sobre las carpetas */
+  }
+  
+  .folder-icon {
+    margin-right: 10px;
+    color: #f0ad4e; /* Color para el ícono de la carpeta */
+  }
+  
+  .folder-details {
+    flex-grow: 1;
+  }
+  
+  .folder-name {
+    font-weight: bold; /* Nombre de la carpeta en negrita */
+  }
+  
+  .folder-updated {
+    color: #6c757d; /* Color para la fecha de actualización */
+  }
+  
