@@ -1,0 +1,77 @@
+<div *ngIf="show" class="popup-background" (click)="closePopup()">
+    <div class="popup-container" (click)="$event.stopPropagation()">
+      <div class="popup-header">
+        <span>Model.dwg</span>
+        <button class="close-button" (click)="closePopup()">&times;</button>
+      </div>
+      <div class="popup-content">
+
+
+
+                <div class="info-container">
+                    <div>
+                        <img src="assets/dwg-icon.png" alt="DWG" class="image-max-size">
+                    </div>
+                    
+                    <div class="info-text">
+                    <p> <b>Type:</b>: dwg</p>
+                    <p> <b>Size:</b> 1 kb</p>
+                    <p><b>Version:</b> 4</p>
+                    </div>
+
+                    <div class="file-actions">
+                        <button class="btn btn-download">
+                            <i class="fas fa-download"></i> Descargar
+                        </button>
+            
+                        <button class="btn btn-upload">
+                            <i class="fas fa-upload"></i> Subir
+                        </button>
+                        <button class="btn btn-delete">
+                            <i class="fas fa-trash"></i> Borrar
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="file-history">
+                <!-- Version history will go here -->
+                </div>
+            </div>
+
+            <div class="versions-container">
+                <table class="versions-table">
+                  <thead>
+                    <tr>
+                      <th>Versiones</th>
+                      <th> 
+
+                        <div class="horizontal-container">
+                            <span class="link-grey">Descargar</span>
+                            <span class="link-grey">Reestablecer</span>
+                          </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let version of documents; let i = index">
+                      <td>{{ version.id }}</td>
+                      <td>
+                        {{ version.fecha_creada }}
+                      </td>
+                      <!-- Radio button for selecting a version -->
+                      <td>
+                        <input type="radio" name="selectedVersion" [value]="version" (change)="onSelectVersion(version)">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+
+            
+
+
+            </div>
+            
+        </div>
+        
