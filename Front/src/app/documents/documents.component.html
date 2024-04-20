@@ -1,4 +1,46 @@
-<div>
-    <h2>Documentos del Folder ID: {{ folderId }}</h2>
-    <!-- Aquí se cargarán los documentos una vez que tengas los datos disponibles -->
+<!-- Filter Bar -->
+<div class="filter-bar">
+  <!-- Dropdowns -->
+  <select class="dropdown">
+    <option value="type1">Tipo</option>
+    <!-- More options -->
+  </select>
+
+  <select class="dropdown">
+    <option value="person1">Personas</option>
+    <!-- More options -->
+  </select>
+
+  <select class="dropdown">
+    <option value="order1">Modificado</option>
+    <!-- More options -->
+  </select>
+
+  <select class="dropdown">
+    <option value="alpha1">Alfabético</option>
+    <!-- More options -->
+  </select>
+
+  <!-- Search Bar -->
+  <input type="search" placeholder="Búsqueda">
+</div>
+
+<!-- File Grid -->
+<div class="file-grid">
+  <!-- Loop over dummy files -->
+  <div class="file-item" *ngFor="let file of dummyFiles">
+    <div [ngClass]="file.icon" class="file-icon"></div>
+    <div class="file-info">
+      <span class="file-name">{{ file.name }}</span>
+      <span class="file-extension">{{ file.type }}</span>
+    </div>
+    <button (click)="popup.openPopup()">Versiones</button>
   </div>
+  
+</div>
+
+
+<app-popup-fileversions #popup></app-popup-fileversions>
+
+
+

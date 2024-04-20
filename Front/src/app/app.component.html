@@ -1,5 +1,7 @@
 <div class="app-container">
+  <div *ngIf="!isLanding && !isLogin && !isRegister && !isNothing ">
   <app-sidebar></app-sidebar>
+  </div>
   <div class="content">
     <router-outlet></router-outlet>
   </div>

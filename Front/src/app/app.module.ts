@@ -13,6 +13,7 @@ import { MarketingComponent } from './Administration/marketing/marketing.compone
 import { FinanceComponent } from './Administration/finance/finance.component';
 import { SectionLayoutComponent } from './layouts/section-layout/section-layout.component';
 import { DocumentsComponent } from './documents/documents.component';
+import { PopupFileversionsComponent } from './popup-fileversions/popup-fileversions.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { DocumentsComponent } from './documents/documents.component';
     FinanceComponent,
     SectionLayoutComponent,
     DocumentsComponent,
+    PopupFileversionsComponent
   ],
   imports: [
     BrowserModule,

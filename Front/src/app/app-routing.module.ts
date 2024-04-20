@@ -8,6 +8,7 @@ import { PowertrainComponent } from './Vehicle/powertrain/powertrain.component';
 import { SuspensionComponent } from './Vehicle/suspension/suspension.component';
 import { SectionLayoutComponent } from './layouts/section-layout/section-layout.component';
 import { DocumentsComponent } from './documents/documents.component';
+import { LoginComponent } from './login/login/login.component';
 
 const routes: Routes = [
   { 
@@ -58,6 +59,10 @@ const routes: Routes = [
       { path: 'documents/:id', component: DocumentsComponent }
     ]
   },
+  {
+    path: 'login',
+    component: LoginComponent,
+  }
 ];
 
 @NgModule({

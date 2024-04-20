@@ -1,0 +1,90 @@
+/* Overall layout styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+input[type="search"] {
+  padding: 5px;
+}
+
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.file-item {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.file-icon {
+/*   background-image: url('../../assets/image.png');
+ */  background-size: cover;
+  height: 100px; /* Adjust as needed */
+  width: 100px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.file-info {
+  margin-top: 10px;
+}
+
+.file-name {
+  display: block;
+  font-weight: bold;
+}
+
+.file-extension {
+  color: #999;
+}
+
+.add-file-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-file-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Adjust your icons paths accordingly */
+.doc-icon {
+  background-image: url('../../assets/doc.png');
+}
+
+.xlsx-icon {
+  background-image: url('../../assets/xls.png');
+}
+
+.pdf-icon {
+  background-image: url('../../assets/pdf.png');
+}
+
+.dwg-icon{
+  background-image: url('../../assets/model.jpg');
+}

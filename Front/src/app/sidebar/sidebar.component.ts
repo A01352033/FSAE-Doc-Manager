@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit{
   imageSrc: string = './assets/FSAE.png';
+  isVehicleExpanded = false;
+  isAdministrationExpanded = false;
+  isSettingsExpanded = false;
 
   list = [
     {
@@ -47,8 +50,31 @@ export class SidebarComponent implements OnInit{
       name: 'Finance',
       icon: 'fa-solid fa-house',
       route: '/finance'
-    }
+    },
+    {
+      number: '7',
+      name: 'Permissions',
+      icon: 'fa-solid fa-house',
+    },
+  ];
 
+  list3 = [
+    {
+      number: '8',
+      name: 'Account',
+      icon: 'fa-solid fa-house',
+    },
+    {
+      number: '9',
+      name: 'Language',
+      icon: 'fa-solid fa-house',
+    },
+    {
+      number: '10',
+      name: 'Dark Mode',
+      icon: 'fa-solid fa-house',
+    },
+   
   ];
   
 constructor() {}
