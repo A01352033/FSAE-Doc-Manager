@@ -11,10 +11,6 @@ export class SidebarComponent implements OnInit{
   isVehicleExpanded = false;
   isAdministrationExpanded = false;
   isSettingsExpanded = false;
-
-  isVehicleExpanded: boolean = false;
-  isAdministrationExpanded: boolean = false;
-  isSettingsExpanded: boolean = false;
   
   list = [
     {
