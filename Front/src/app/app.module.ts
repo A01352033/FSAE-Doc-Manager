@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeDocComponent } from './home-doc/home-doc.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PopupFileversionsComponent } from './popup-fileversions/popup-fileversions.component';
+import { PopupCreateComponent } from './popup-create/popup-create.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PopupFileversionsComponent } from './popup-fileversions/popup-fileversi
     ContactComponent,
     HomeDocComponent,
     PageNotFoundComponent,
-    PopupFileversionsComponent
+    PopupFileversionsComponent,
+    PopupCreateComponent
   ],
   imports: [
     HttpClientModule,
