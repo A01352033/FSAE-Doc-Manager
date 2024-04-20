@@ -6,6 +6,8 @@ import { Router, NavigationEnd } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+/* Now we add the routes */
 export class AppComponent {
   title = 'Front';
   recentFiles: any;

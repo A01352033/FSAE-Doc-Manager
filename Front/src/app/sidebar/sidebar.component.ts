@@ -12,6 +12,10 @@ export class SidebarComponent implements OnInit{
   isAdministrationExpanded = false;
   isSettingsExpanded = false;
 
+  isVehicleExpanded: boolean = false;
+  isAdministrationExpanded: boolean = false;
+  isSettingsExpanded: boolean = false;
+  
   list = [
     {
       number: '1',

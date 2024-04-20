@@ -1,0 +1,17 @@
+<div class="coolheader d-flex flex-row flex-shrink-0 p-3">
+  <div class="col">
+    <div class="row">
+        <!-- Add a for loop, to make a card per folder -->
+        <div *ngFor="let card of cards" class="card">
+            <!-- Use an anchor tag to make the whole card clickable -->
+            <a href="{{card.link}}" style="text-decoration: none; color: inherit;">
+                <img class="card-img-top pad" src="{{card.image}}" alt="Card image cap">
+                <div class="card-body">
+                    <!-- <h5 class="card-title">{{card.title}}</h5> -->
+                    <p class="card-text">{{card.description}}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+</div>
