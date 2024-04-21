@@ -1,0 +1,22 @@
+/* floating-action-button.component.css */
+.floating-action-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other items */
+  }
+  
+  .floating-action-btn img {
+    width: 50%;
+  }
+  
