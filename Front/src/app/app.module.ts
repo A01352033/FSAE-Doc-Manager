@@ -18,6 +18,9 @@ import { DocumentsComponent } from './documents/documents.component';
 import { PopupFileversionsComponent } from './popup-fileversions/popup-fileversions.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { UploadDialogComponent } from './upload-dialog/upload-dialog.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -41,6 +44,9 @@ import { UploadDialogComponent } from './upload-dialog/upload-dialog.component';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
+    HttpClientModule
+
+    
   ],
   providers: [
     provideAnimationsAsync()
