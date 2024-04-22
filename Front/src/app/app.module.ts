@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -13,6 +16,8 @@ import { FinanceComponent } from './Administration/finance/finance.component';
 import { SectionLayoutComponent } from './layouts/section-layout/section-layout.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { PopupFileversionsComponent } from './popup-fileversions/popup-fileversions.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { UploadDialogComponent } from './upload-dialog/upload-dialog.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +31,20 @@ import { PopupFileversionsComponent } from './popup-fileversions/popup-fileversi
     FinanceComponent,
     SectionLayoutComponent,
     DocumentsComponent,
-    PopupFileversionsComponent
+    PopupFileversionsComponent,
+    UploadDialogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

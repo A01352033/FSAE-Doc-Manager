@@ -88,3 +88,10 @@ input[type="search"] {
 .dwg-icon{
   background-image: url('../../assets/model.jpg');
 }
+
+.upload-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+}

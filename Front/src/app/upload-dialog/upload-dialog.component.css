@@ -1,0 +1,63 @@
+.upload-dialog-container {
+    max-width: 600px; /* O el ancho que prefieras */
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+  
+  .upload-dialog-title {
+    font-size: 24px; /* Tamaño de letra más grande para el título */
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .mat-form-field {
+    width: 100%; /* Asegúrate de que los campos de formulario usen todo el ancho disponible */
+    margin-bottom: 16px;
+  }
+  
+  .input-file-container {
+    display: block;
+    margin-bottom: 24px;
+  }
+  
+  .file-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .upload-dialog-actions {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #005fcc;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:last-child {
+    background-color: #f44336; /* O el color que prefieras para el botón cancelar */
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Estilos para cuando el botón esté deshabilitado */
+  button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
