@@ -14,8 +14,6 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeDocComponent } from './home-doc/home-doc.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PopupFileversionsComponent } from './popup-fileversions/popup-fileversions.component';
-import { PopupCreateComponent } from './popup-create/popup-create.component';
-import { CreateDocumentButtonComponent } from './create-document-button/create-document-button.component';
 
 @NgModule({
   declarations: [
@@ -28,9 +26,7 @@ import { CreateDocumentButtonComponent } from './create-document-button/create-d
     ContactComponent,
     HomeDocComponent,
     PageNotFoundComponent,
-    PopupFileversionsComponent,
-    PopupCreateComponent,
-    CreateDocumentButtonComponent
+    PopupFileversionsComponent
   ],
   imports: [
     HttpClientModule,
