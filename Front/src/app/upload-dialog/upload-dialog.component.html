@@ -1,0 +1,19 @@
+<div class="upload-dialog-container">
+    <h2 class="upload-dialog-title">Subir Archivo</h2>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre del archivo</mat-label>
+      <input matInput [placeholder]="nombre">
+    </mat-form-field>
+  
+    <div class="input-file-container">
+      <input type="file" class="file-input" (change)="onFileSelected($event)">
+    </div>
+  
+    <div class="upload-dialog-actions">
+      <button mat-raised-button color="primary" (click)="onUpload()">Subir</button>
+      <button mat-raised-button color="warn" (click)="onCancel()">Cancelar</button>
+    </div>
+  </div>
+  
+

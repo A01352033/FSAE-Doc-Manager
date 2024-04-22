@@ -136,6 +136,11 @@
     
  
   }
+
+  img {
+    max-width: 100%; /* Ensures the image does not exceed its container */
+    height: auto; /* Allows the image to maintain its aspect ratio */
+  }
   
   
 

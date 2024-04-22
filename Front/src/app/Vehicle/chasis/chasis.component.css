@@ -1,0 +1,52 @@
+/* En tu chasis.component.css */
+.chasis-folders {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ajusta el número de columnas según sea necesario */
+  gap: 20px; /* Espacio entre las carpetas */
+  padding: 20px;
+  justify-items: center; /* Centrar los elementos en las celdas de la cuadrícula */
+}
+
+.folder-item {
+  background-color: #fff; /* Fondo blanco para las carpetas */
+  border-radius: 10px; /* Bordes redondeados para un look suave */
+  width: 100%; /* Para asegurarse de que el folder ocupe todo el ancho de la celda */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar */
+  text-align: center; /* Texto centrado dentro del folder */
+  padding: 16px; /* Espacio interno dentro del folder */
+  display: flex; /* Para utilizar flexbox dentro del folder */
+  flex-direction: column; /* Íconos y texto uno encima del otro */
+  justify-content: center; /* Centrado verticalmente */
+  cursor: pointer; /* Cursor de mano al pasar sobre las carpetas */
+}
+
+.folder-icon {
+  font-size: 48px; /* Tamaño del ícono de la carpeta */
+  color: #f0ad4e; /* Color para el ícono de la carpeta */
+  margin-bottom: 8px; /* Espacio debajo del ícono */
+}
+
+.folder-link {
+  color: inherit; /* Para heredar el color de texto de los elementos padres */
+  text-decoration: none; /* Para eliminar el subrayado de los enlaces */
+}
+
+.folder-name {
+  font-size: 1.2rem; /* Tamaño de letra del nombre del folder */
+  font-weight: bold; /* Hace el nombre de la carpeta en negrita */
+  margin-bottom: 0.5rem; /* Espacio debajo del nombre para la fecha */
+}
+
+.folder-updated {
+  font-size: 0.9rem; /* Tamaño de letra más pequeño para la fecha */
+  color: #6c757d; /* Un color gris para la fecha */
+}
+
+.folder-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
+  transform: translateY(-3px); /* Eleva ligeramente el folder al pasar el mouse */
+}
+
+.pad {
+  width: 60px;
+}

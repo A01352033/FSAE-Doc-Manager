@@ -8,31 +8,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit{
   imageSrc: string = './assets/FSAE.png';
-
-  isVehicleExpanded: boolean = false;
-  isAdministrationExpanded: boolean = false;
-  isSettingsExpanded: boolean = false;
+  isVehicleExpanded = false;
+  isAdministrationExpanded = false;
+  isSettingsExpanded = false;
   
   list = [
     {
       number: '1',
       name: 'Chasis',
       icon: 'fa-solid fa-house',
+      route: '/chasis'
     },
     {
       number: '2',
       name: 'Suspension',
       icon: 'fa-solid fa-house',
+      route: '/suspension'
     },
     {
       number: '3',
       name: 'Electronics',
       icon: 'fa-solid fa-house',
+      route: '/electronics'
     },
     {
       number: '4',
       name: 'Powetrain',
       icon: 'fa-solid fa-house',
+      route: '/powertrain'
     },
   ];
   list2 =[
@@ -40,19 +43,19 @@ export class SidebarComponent implements OnInit{
       number: '5',
       name: 'Marketing',
       icon: 'fa-solid fa-house',
+      route: '/marketing'
     },
     {
       number: '6',
       name: 'Finance',
       icon: 'fa-solid fa-house',
+      route: '/finance'
     },
     {
       number: '7',
       name: 'Permissions',
       icon: 'fa-solid fa-house',
     },
-    
-
   ];
 
   list3 = [

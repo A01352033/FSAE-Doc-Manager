@@ -1,0 +1,21 @@
+<div class="section-layout">
+  <div *ngIf="showRecientes" class="recent-files-section">
+      <h2>Recientes</h2>
+      <div class="recent-files-container">
+          <!-- Los ítems recientes irán aquí -->
+          <!-- Placeholder para el globo de ícono, por ahora vacío -->
+          <div class="recent-file-item">
+              <div class="file-icon"></div>
+              <div class="file-details">
+                  <div class="file-name">Tu archivo aquí</div>
+                  <div class="file-modified">Fecha de modificación</div>
+              </div>
+          </div>
+          <!-- Repite el placeholder para la cantidad deseada de ítems -->
+      </div>
+  </div>
+  <div class="folder-section">
+      <router-outlet></router-outlet>
+  </div>
+</div>
+  
