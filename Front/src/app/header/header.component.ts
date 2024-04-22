@@ -9,18 +9,18 @@ export class HeaderComponent {
 cards: any = [
     {
       title: 'Card 1',
-      description: 'Recommended 1',
-      image: '../assets/folder_icon.png'
+      description: 'Model1.dwg',
+      image: '../assets/dwg-icon.png'
     },
     {
       title: 'Card 2',
-      description: 'Recommended 2',
-      image: '../assets/folder_icon.png'
+      description: 'Model2.dwg',
+      image: '../assets/dwg-icon.png'
     },
     {
       title: 'Card 3',
-      description: 'Recommended 3',
-      image: '../assets/folder_icon.png'
+      description: 'Model3.dwg',
+      image: '../assets/dwg-icon.png'
     }
   ];
 

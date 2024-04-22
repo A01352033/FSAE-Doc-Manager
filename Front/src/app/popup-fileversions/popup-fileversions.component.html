@@ -20,7 +20,7 @@
                     </div>
 
                     <div class="file-actions">
-                        <button class="btn btn-download">
+                        <button class="btn btn-download" (click) = "downloadCurrentVersion()" >
                             <i class="fas fa-download"></i> Descargar
                         </button>
             
@@ -46,7 +46,7 @@
                       <th> 
 
                         <div class="horizontal-container">
-                            <span class="link-grey">Descargar</span>
+                            <span class="link-grey" (click)="downloadSelectedVersion()">Descargar</span>
                             <span class="link-grey">Reestablecer</span>
                           </div>
                       </th>
@@ -54,13 +54,15 @@
                   </thead>
                   <tbody>
                     <tr *ngFor="let version of documents; let i = index">
-                      <td>{{ version.id }}</td>
+                      <td>{{ version.version_id }}</td>
                       <td>
-                        {{ version.fecha_creada }}
+                        {{ version.fechacreada }}
                       </td>
                       <!-- Radio button for selecting a version -->
                       <td>
-                        <input type="radio" name="selectedVersion" [value]="version" (change)="onSelectVersion(version)">
+                        <input type="radio" name="selectedVersion" [value]="version" (click)="selectedVersion = version">
+
+
                       </td>
                     </tr>
                   </tbody>
